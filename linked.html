@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKED SCRIPTS</title>
+    <script src="external.js"></script> 
+    <script>
+        function sayHi() {
+        alert("Hi from a local script!");
+        }
+    </script>
+</head>
+<body>
+    <H1>Linked, local and inline</H1>
+
+    <!-- <button onclick="sayHi()">Say hi</button> -->
+    <button onclick="function sayHi(){alert('Hi from a INLINE script!')};sayHi()">Say hi</button>
+    <!-- Bad Practice ^^ -->
+
+    
+
+</body>
+</html>
