@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+</head>
+<body>
+    <h1>Exercise 3</h1>
+    <script>
+        // function getNumber() {
+
+        // }
+        
+        var numOneStr = prompt('Please enter the first number:');
+        var numOne = Number(numOneStr);
+        
+        
+        // while (numOne == NaN) {
+        //     numOneStr = prompt('Please enter a valid number:');
+        //     numOne = Number(numOneStr);
+        // }
+        
+
+        var numTwoStr = prompt('Please enter the second number:');
+        var numTwo = Number(numTwoStr);
+
+        var operator = prompt('please enter the operation:')
+
+        switch (operator) {
+            case '+':
+                alert(numOne + numTwo);
+                break;
+            case '-':
+                alert(numOne - numTwo);
+                break;
+            case '/':
+                alert(numOne / numTwo);
+                break;
+            case '*':
+                alert(numOne * numTwo);
+                break;
+            default:
+                alert('Please enter a valid operator');
+                break;
+        }
+    </script>
+</body>
+</html>
+
+<!-- Got called away and got caught up in work situations at the moment -->

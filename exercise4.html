@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grader</title>
+</head>
+<body>
+    <h1>Exercise 4</h1>
+
+    <script>
+        function evaluateMark(mark) {
+
+            let result = 0;
+
+            // switch (mark) {
+            //         case mark >= 90:
+            //             result ='Your grade is A';
+            //             break;
+            //         case mark >= 80:
+            //             result = 'Your grade is B';
+            //             break;
+            //         case mark >= 70:
+            //             result = 'Your grade is C';
+            //             break;
+            //         case mark >= 60:
+            //             result = 'Your grade is D';
+            //             break;
+            //         case mark >= 50:
+            //             result ='Your grade is E';
+            //             break;
+            //         case mark < 50:
+            //             result = 'Your grade is F';
+            //             break;
+            //         default:
+            //             result = 'mark is out of bounds somehow.'
+            //             break;
+            // }
+
+            // put a whole bunch of control flow here. I don't think I used the switch correctly.
+
+            return result;
+        }
+
+        function grade() {
+            var more = true;
+            var mark, markInt;
+
+            while (more) {
+                mark = Number(prompt('Please enter a Mark'));
+                markInt = Number(mark);
+                alert(evaluateMark(markInt));
+                more = confirm('More marks to grade?');
+            }
+        }
+
+        grade();
+
+    </script>
+    
+</body>
+</html>
