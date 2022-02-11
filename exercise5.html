@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank-account-constructor-function</title>
+</head>
+<body>
+    <h1>Exercise 5</h1>
+
+    <script>
+        function Account(name, number, balance) {
+            this.name = name;
+            this.number = number;
+            this.balance = balance;
+        }
+
+        Account.prototype.deposit = function deposit(amount) {
+            this.balance += amount;
+        }
+
+        Account.prototype.withdraw = function withdraw(amount) {
+            if (amount <= this.balance) {
+                this.balance -= amount;
+            }
+            
+        }
+
+        const a1 = new Account('Terry', 1, 1000);
+        const a2 = new Account('Jom', 4, 200);
+
+        console.log('Balances should be 1000 and 200');
+        console.log(a1.balance);
+        console.log(a2.balance);
+
+        console.log('adding 100 to both:');
+        a1.deposit(100);
+        a2.deposit(100);
+
+        console.log('Balances should be 1100 and 300');
+        console.log(a1.balance);
+        console.log(a2.balance);
+
+        Account.prototype.display = function display() {
+            alert(`Name: ${this.name}, number: ${this.number}, balance: ${this.balance}`);
+        }
+
+        a1.display();
+        a2.display();
+
+        // I'm surviving off of 5 hours sleep. That's as far
+        // as I'm gonna do for now (ಥ﹏ಥ)
+
+    </script>
+</body>
+</html>
